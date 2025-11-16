@@ -1,0 +1,6 @@
+---
+// This page redirects the user to the default language
+import { defaultLang } from '../i18n/ui';
+
+return Astro.redirect(`${import.meta.env.BASE_URL}/${defaultLang}/specs`);
+---

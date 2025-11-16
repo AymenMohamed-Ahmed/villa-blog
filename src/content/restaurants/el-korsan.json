@@ -1,0 +1,16 @@
+{
+  "name": {
+    "en": "El Korsan",
+    "fr": "El Korsan",
+    "es": "El Korsan",
+    "ar": "القرصان"
+  },
+  "description": {
+    "en": "Traditional Moroccan decor, refined Moroccan cuisine, animated by an orchestra and oriental dancer.",
+    "fr": "Décor marocain traditionnel, cuisine marocaine raffinée, animée par un orchestre et une danseuse orientale.",
+    "es": "Decoración tradicional marroquí, cocina marroquí refinada, animada por una orquesta y bailarina oriental.",
+    "ar": "ديكور مغربي تقليدي، مطبخ مغربي راقٍ، مع أوركسترا وراقصة شرقية."
+  },
+  "capacity": 80,
+  "url": "https://menu.elminzah.ma/el-korsan/"
+}

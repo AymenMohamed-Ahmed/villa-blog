@@ -1,0 +1,23 @@
+{
+  "name": {
+    "en": "Salon El Koubah",
+    "fr": "Salon El Koubah",
+    "es": "Salón El Koubah",
+    "ar": "قاعة القبة"
+  },
+  "location": {
+    "en": "Ground Floor",
+    "fr": "Rez-de-chaussée",
+    "es": "Planta Baja",
+    "ar": "الطابق الأرضي"
+  },
+  "theater": 180,
+  "u_shape": 60,
+  "cocktail": 200,
+  "dancing_dinner": 170,
+  "buffet_dinner": 170,
+  "lunch_dinner": 180,
+  "length_m": 17,
+  "width_m": 12,
+  "height_m": 4.5
+}

@@ -1,0 +1,176 @@
+---
+import { getEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ui, defaultLang, languages } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => {
+    return { params: { lang: lang as 'en' | 'fr' | 'es' | 'ar' } };
+  });
+}
+
+const { lang = defaultLang } = Astro.params as { lang: 'en' | 'fr' | 'es' | 'ar' };
+const t = (key: keyof (typeof ui)[typeof lang]) => ui[lang][key] || ui[defaultLang][key];
+
+const pageContent = await getEntry('main-content', 'specs').catch(() => null);
+const restaurants = await getCollection('restaurants').catch(() => []);
+const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
+---
+<BaseLayout title={t('specs.title')} lang={lang}>
+    
+    <main class="container mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16">
+
+        {pageContent ? (
+            <div class="space-y-16 sm:space-y-20">
+
+                <!-- Section: Introduction -->
+                <section id="introduction" class="bg-white dark:bg-charcoal-800 rounded-xl shadow-lg overflow-hidden p-6 sm:p-8 md:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900 dark:text-cream-100 border-b-2 border-gold-light dark:border-gold-dark pb-4 mb-6 sm:mb-8">{pageContent.data.introduction.title[lang]}</h2>
+                    <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed text-justify">
+                        {pageContent.data.introduction.body[lang]}
+                    </p>
+                </section>
+
+                <!-- Section: Accommodation -->
+                <section id="accomodation" class="bg-white dark:bg-charcoal-800 rounded-xl shadow-lg overflow-hidden p-6 sm:p-8 md:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900 dark:text-cream-100 border-b-2 border-gold-light dark:border-gold-dark pb-4 mb-6 sm:mb-8">{pageContent.data.accomodation.title[lang]}</h2>
+                    <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed text-justify mb-8">
+                        {pageContent.data.accomodation.body[lang]}
+                    </p>
+                    {pageContent.data.accomodation.images && (
+                        <div class="flex justify-center">
+                            <div class="carousel carousel-center w-full max-w-4xl rounded-box space-x-4 bg-neutral-focus p-4">
+                                {pageContent.data.accomodation.images.map((image: string, index: number) => (
+                                    <div id={`slide${index}`} class="carousel-item">
+                                        <img src={image} alt={`Accommodation ${index + 1}`} class="rounded-box" />
+                                    </div> 
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </section>
+
+                <!-- Section: Restaurants & Bars -->
+                <section id="restaurants" class="bg-white dark:bg-charcoal-800 rounded-xl shadow-lg overflow-hidden p-6 sm:p-8 md:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900 dark:text-cream-100 border-b-2 border-gold-light dark:border-gold-dark pb-4 mb-6 sm:mb-8">{pageContent.data.restaurants_intro.title[lang]}</h2>
+                    <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
+                        {pageContent.data.restaurants_intro.body[lang]}
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        {restaurants.map(restaurant => {
+                            const CardContent = (
+                                <div class="bg-cream-100 dark:bg-charcoal-700 rounded-lg p-6 h-full flex flex-col transform transition duration-300 hover:shadow-xl hover:-translate-y-2">
+                                    <h3 class="text-2xl font-serif text-gold-dark dark:text-cream-100">{restaurant.data.name[lang]}</h3>
+                                    <p class="text-charcoal-700 dark:text-cream-200 mt-3 mb-4 font-sans flex-grow">{restaurant.data.description[lang]}</p>
+                                    {restaurant.data.capacity != null && (
+                                        <p class="text-sm text-gold font-semibold font-sans">Capacity: {restaurant.data.capacity}</p>
+                                    )}
+                                </div>
+                            );
+
+                            const url = restaurant.data.url 
+                                ? restaurant.data.url.replace('menu.elminzah.ma/', `menu.elminzah.ma/${lang}/`)
+                                : null;
+
+                            return url ? (
+                                <a href={url} target="_blank" rel="noopener noreferrer" class="block h-full">
+                                    {CardContent}
+                                </a>
+                            ) : (
+                                <div class="h-full">
+                                    {CardContent}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </section>
+
+                <!-- Section: Meeting Rooms -->
+                <section id="meetings" class="bg-white dark:bg-charcoal-800 rounded-xl shadow-lg overflow-hidden p-6 sm:p-8 md:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900 dark:text-cream-100 border-b-2 border-gold-light dark:border-gold-dark pb-4 mb-6 sm:mb-8">{pageContent.data.meetings_intro.title[lang]}</h2>
+                    <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
+                        {pageContent.data.meetings_intro.body[lang]}
+                    </p>
+                    <div class="overflow-x-auto rounded-lg border border-gold-light dark:border-gold-dark">
+                        <table class="min-w-full divide-y divide-gold-light dark:divide-gold-dark bg-cream-100 dark:bg-charcoal-700 text-base">
+                            <thead class="bg-gold-dark dark:bg-gold-dark text-dark font-sans">
+                                <tr>
+                                    {['room', 'location', 'theater', 'u_shape', 'cocktail', 'buffet', 'dimensions'].map(key => (
+                                        <th class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 font-semibold text-left">{t(`meetings.${key}`)}</th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gold-light">
+                                {meetingRooms.map(room => ( 
+                                    <tr class="hover:bg-cream-200 dark:hover:bg-charcoal-900 transition-colors dark:text-cream-200">
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 font-serif text-gold-dark dark:text-cream-100 font-semibold">{room.data.name[lang]}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200">{room.data.location[lang]}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.theater ?? '—'}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.u_shape ?? '—'}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.cocktail ?? '—'}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.buffet_dinner ?? '—'}</td>
+                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 font-sans text-sm">
+                                            {room.data.length_m}m x {room.data.width_m}m x {room.data.height_m}m
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Section: Relaxation & Leisure -->
+                <section id="leisure" class="bg-white dark:bg-charcoal-800 rounded-xl shadow-lg overflow-hidden p-6 sm:p-8 md:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900 dark:text-cream-100 border-b-2 border-gold-light dark:border-gold-dark pb-4 mb-6 sm:mb-8">{pageContent.data.leisure_intro.title[lang]}</h2>
+                    <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
+                        {pageContent.data.leisure_intro.body[lang]}
+                    </p>
+                    {pageContent.data.leisure_intro.images && (
+                        <div class="flex justify-center">
+                            <div class="carousel carousel-center w-full max-w-4xl mx-auto rounded-box space-x-4 bg-neutral-focus p-4">
+                            {pageContent.data.leisure_intro.images.map((image: string, index: number) => (
+                                <div id={`leisure-slide${index}`} class="carousel-item">
+                                    <img src={image} alt={`Leisure ${index + 1}`} class="rounded-box h-64" />
+                                </div> 
+                            ))}
+                        </div>
+                    </div>
+                    <div class="flex justify-center w-full py-2 gap-2">
+                        {pageContent.data.leisure_intro.images.map((image: string, index: number) => (
+                            <a href={`#leisure-slide${index}`} class="btn btn-xs">{index + 1}</a> 
+                        ))}
+                    </div>
+                    )}
+                    <div class="space-y-8 mt-8">
+                        <div>
+                            <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.wellness_intro.title[lang]}</h3>
+                            <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">
+                                {pageContent.data.wellness_intro.body[lang]}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.wellness_moment.title[lang]}</h3>
+                            <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">
+                                {pageContent.data.wellness_moment.body[lang]}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.sports_intro.title[lang]}</h3>
+                            <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">
+                                {pageContent.data.sports_intro.body[lang]}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        ) : (
+            <div class="text-center text-red-600 dark:text-red-300 font-semibold bg-red-100 dark:bg-red-900 p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-serif">Content Files Not Found</h2>
+                <p class="mt-2 font-sans">Could not load data from <code class="text-sm bg-red-200 dark:bg-red-800 p-1 rounded">src/content/main-content/specs.json</code>.</p>
+                <p class="mt-4 font-sans">Please ensure the content files exist and are correctly formatted.</p>
+            </div>
+        )}
+
+    </main>
+</BaseLayout>

@@ -1,0 +1,23 @@
+{
+  "name": {
+    "en": "Salon Yasmina",
+    "fr": "Salon Yasmina",
+    "es": "Salón Yasmina",
+    "ar": "قاعة ياسمينة"
+  },
+  "location": {
+    "en": "3rd Floor",
+    "fr": "3ème étage",
+    "es": "3ª Planta",
+    "ar": "الطابق الثالث"
+  },
+  "theater": 50,
+  "u_shape": 30,
+  "cocktail": 50,
+  "dancing_dinner": null,
+  "buffet_dinner": 40,
+  "lunch_dinner": 40,
+  "length_m": 8,
+  "width_m": 6.5,
+  "height_m": 3
+}

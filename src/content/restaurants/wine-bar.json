@@ -1,0 +1,16 @@
+{
+  "name": {
+    "en": "Wine Bar",
+    "fr": "Wine Bar",
+    "es": "Wine Bar",
+    "ar": "بار النبيذ"
+  },
+  "description": {
+    "en": "Offering a casual menu with a wide selection of local and foreign wines. Friendly atmosphere.",
+    "fr": "Proposant un menu décontracté avec une large sélection de vins locaux et étrangers. Ambiance conviviale.",
+    "es": "Ofreciendo un menú informal con una amplia selección de vinos locales y extranjeros. Ambiente agradable.",
+    "ar": "يقدم قائمة طعام غير رسمية مع مجموعة واسعة من النبيذ المحلي والأجنبي. جو ودي."
+  },
+  "capacity": null,
+  "url": "https://menu.elminzah.ma/wine-bar/"
+}

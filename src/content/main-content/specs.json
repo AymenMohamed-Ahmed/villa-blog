@@ -1,0 +1,127 @@
+{
+  "introduction": {
+    "title": {
+      "en": "Introduction",
+      "fr": "Introduction",
+      "es": "Introducción",
+      "ar": "مقدمة"
+    },
+    "body": {
+      "en": "At the meeting of Europe and Africa, of the Atlantic and the Mediterranean, Tangier opens the door on Morocco. In Tangier, everything begins with the sea, and everything leads to the sea. From one of our beautiful terraces, look at this living picture that has captivated so many artists: the harbor, the green and blue waters of the Strait of Gibraltar and, in the distance, Andalusia shining in the enthusiastic sunlight of the setting. Built in 1930, completely renovated in 2019, and in Hispano-Moorish style, by the English aristocrat Lord Bute, El Minzah Hotel is a haven of peace and tranquility. It enjoys a strategic location, between the old medina and the city center and a short walk from the beach and the port of Tangier.",
+      "fr": "À la rencontre de l'Europe et de l'Afrique, de l'Atlantique et de la Méditerranée, Tanger ouvre la porte du Maroc. À Tanger, tout commence par la mer, et tout mène à la mer. Depuis l'une de nos belles terrasses, admirez ce tableau vivant qui a captivé tant d'artistes : le port, les eaux vertes et bleues du détroit de Gibraltar et, au loin, l'Andalousie brillant sous le soleil enthousiaste du couchant. Construit en 1930, entièrement rénové en 2019, et de style hispano-mauresque, par l'aristocrate anglais Lord Bute, El Minzah Hôtel est un havre de paix et de tranquillité. Il bénéficie d'un emplacement stratégique, entre l'ancienne médina et le centre-ville et à quelques pas de la plage et du port de Tanger.",
+      "es": "En el encuentro de Europa y África, del Atlántico y el Mediterráneo, Tánger abre la puerta de Marruecos. En Tánger, todo empieza en el mar, y todo lleva al mar. Desde una de nuestras hermosas terrazas, contemple este cuadro vivo que ha cautivado a tantos artistas: el puerto, las aguas verdes y azules del Estrecho de Gibraltar y, a lo lejos, Andalucía brillando bajo el sol entusiasta del atardecer. Construido en 1930, completamente renovado en 2019, y de estilo hispano-morisco, por el aristócrata inglés Lord Bute, El Minzah Hotel es un remanso de paz y tranquilidad. Goza de una ubicación estratégica, entre la antigua medina y el centro de la ciudad y a pocos pasos de la playa y el puerto de Tánger.",
+      "ar": "عند ملتقى أوروبا وأفريقيا، الأطلسي والمتوسط، تفتح طنجة باب المغرب. في طنجة، كل شيء يبدأ من البحر، وكل شيء يؤدي إلى البحر. من إحدى شرفاتنا الجميلة، انظر إلى هذه الصورة الحية التي أسرت العديد من الفنانين: الميناء، مياه مضيق جبل طارق الخضراء والزرقاء، وفي الأفق، الأندلس تتلألأ تحت أشعة الشمس الغاربة الحماسية. بني فندق المنزه عام 1930، وتم تجديده بالكامل عام 2019، على الطراز الإسباني-المغربي، على يد الأرستقراطي الإنجليزي اللورد بوت، وهو ملاذ للسلام والهدوء. يتمتع بموقع استراتيجي، بين المدينة القديمة ووسط المدينة وعلى بعد مسافة قصيرة سيرًا على الأقدام من الشاطئ وميناء طنجة."
+    }
+  },
+  "accomodation": {
+    "title": {
+      "en": "Accomodation",
+      "fr": "Hébergement",
+      "es": "Alojamiento",
+      "ar": "الإقامة"
+    },
+    "body": {
+      "en": "With 103 Deluxe Rooms and 27 Suites, El Minzah Hotel offers you a change of scenery for a pleasant stay. Its richly decorated homes are all equipped with air conditioning and luxury comfort.",
+      "fr": "Avec 103 Chambres Deluxe et 27 Suites, El Minzah Hôtel vous offre un dépaysement pour un agréable séjour. Ses demeures richement décorées sont toutes équipées de climatisation et d'un confort luxueux.",
+      "es": "Con 103 Habitaciones Deluxe y 27 Suites, El Minzah Hotel le ofrece un cambio de escenario para una estancia agradable. Sus viviendas ricamente decoradas están todas equipadas con aire acondicionado y confort de lujo.",
+      "ar": "يضم فندق المنزه 103 غرفة ديلوكس و 27 جناحاً، ويقدم لكم تغييراً في المشهد لإقامة ممتعة. تم تجهيز جميع مساكنه المزينة ببذخ بتكييف الهواء ووسائل راحة فاخرة."
+    },
+    "images": [
+      "/el-minzah/assets/images/guest-room-1.png",
+      "/el-minzah/assets/images/guest-room-2.png"
+    ]
+  },
+  "restaurants_intro": {
+    "title": {
+      "en": "Restaurants & Bars",
+      "fr": "Restaurants & Bars",
+      "es": "Restaurantes y Bares",
+      "ar": "المطاعم والبارات"
+    },
+    "body": {
+      "en": "A brief introduction to the dining experiences available at El Minzah, from international cuisine to traditional Moroccan decor and casual poolside lunches. All content is sourced from the fiche technique.",
+      "fr": "Une brève introduction aux expériences culinaires disponibles à El Minzah, de la cuisine internationale au décor marocain traditionnel et aux déjeuners décontractés au bord de la piscine. Tout le contenu provient de la fiche technique.",
+      "es": "Una breve introducción a las experiencias gastronómicas disponibles en El Minzah, desde cocina internacional hasta decoración tradicional marroquí y almuerzos informales junto a la piscina. Todo el contenido proviene de la ficha técnica.",
+      "ar": "مقدمة موجزة عن تجارب الطعام المتاحة في المنزه، من المأكولات العالمية إلى الديكور المغربي التقليدي ووجبات الغداء الخفيفة بجانب المسبح. جميع المحتويات مأخوذة من الورقة الفنية."
+    }
+  },
+  "meetings_intro": {
+    "title": {
+      "en": "Meeting Rooms & Banquets",
+      "fr": "Salles de Réunion & Banquets",
+      "es": "Salas de Reuniones y Banquetes",
+      "ar": "قاعات الاجتماعات والحفلات"
+    },
+    "body": {
+      "en": "With 3 rooms, all in daylight, (including 1 multipurpose room that can accommodate up to 180 people), El Minzah Hotel can organize your seminars and banquets and make them the most successful events. Equipment available: Sound system, Fixed pickups and Walkmans, Projectors, Projection screen, flipchart, lectern.",
+      "fr": "Avec 3 salles, toutes à la lumière du jour, (dont 1 salle polyvalente pouvant accueillir jusqu'à 180 personnes), El Minzah Hôtel peut organiser vos séminaires et banquets et en faire des événements des plus réussis. Matériel disponible : Sonorisation, Micros fixes et baladeurs, Projecteurs, Écran de projection, paperboard, pupitre.",
+      "es": "Con 3 salas, todas con luz natural, (incluida 1 sala polivalente que puede alojar hasta 180 personas), El Minzah Hotel puede organizar sus seminarios y banquetes y convertirlos en los eventos más exitosos. Equipo disponible: Sistema de sonido, Micrófonos fijos y portátiles, Proyectores, Pantalla de proyección, rotafolio, atril.",
+      "ar": "بفضل 3 قاعات، كلها مضاءة بنور النهار، (بما في ذلك قاعة متعددة الأغراض تتسع لما يصل إلى 180 شخصًا)، يمكن لفندق المنزه تنظيم ندواتكم وحفلاتكم وجعلها أنجح الفعاليات. المعدات المتاحة: نظام صوتي، ميكروفونات ثابتة ومتنقلة، أجهزة عرض، شاشة عرض، لوح ورقي، منصة."
+    }
+  },
+  "leisure_intro": {
+    "title": {
+      "en": "Relaxation & Leisure",
+      "fr": "Détente & Loisirs",
+      "es": "Relajación y Ocio",
+      "ar": "الاسترخاء والترفيه"
+    },
+    "body": {
+      "en": "Discover the wellness and sports facilities available to our guests, as detailed in the fiche technique.",
+      "fr": "Découvrez les installations de bien-être et de sport à la disposition de nos clients, comme détaillé dans la fiche technique.",
+      "es": "Descubra las instalaciones de bienestar y deportivas a disposición de nuestros huéspedes, según se detalla en la ficha técnica.",
+      "ar": "اكتشف مرافق العافية والرياضة المتاحة لضيوفنا، كما هو مفصل في الورقة الفنية."
+    },
+    "images": [
+      "/el-minzah/assets/images/spa-massage.png",
+      "/el-minzah/assets/images/spa-sauna.png",
+      "/el-minzah/assets/images/spa-hammam.png",
+      "/el-minzah/assets/images/gym.png",
+      "/el-minzah/assets/images/sports-tennis.png",
+      "/el-minzah/assets/images/sports-padel.png",
+      "/el-minzah/assets/images/sports-basketball-petanque.png"
+    ]
+  },
+  "wellness_intro": {
+    "title": {
+      "en": "El Minzah Wellness Center",
+      "fr": "El Minzah Wellness Center",
+      "es": "El Minzah Wellness Center",
+      "ar": "مركز المنزه الصحي"
+    },
+    "body": {
+      "en": "El Minzah Wellness Center: Hydrojet, Cellu M6, Lift 6, Pressotherapy, Algotherapy, Aquatic Trail, Massortherm Excluding conventional services: Hairdressing and beauty salon, Massages, Gym, Hammam, Sauna, Jacuzzi, Steam Bath",
+      "fr": "El Minzah Wellness Center : Hydrojet, Cellu M6, Lift 6, Pressothérapie, Algothérapie, Parcours Aquatique, Massortherm Hors prestations classiques : Salon de coiffure et d'esthétique, Massages, Salle de sport, Hammam, Sauna, Jacuzzi, Bain vapeur",
+      "es": "El Minzah Wellness Center: Hydrojet, Cellu M6, Lift 6, Presoterapia, Algoterapia, Recorrido Acuático, Massortherm Excluyendo servicios convencionales: Peluquería y salón de belleza, Masajes, Gimnasio, Hammam, Sauna, Jacuzzi, Baño de vapor",
+      "ar": "مركز المنزه الصحي: هيدروجيت، سيلو إم 6، ليفت 6، العلاج بالضغط، العلاج بالطحالب، المسار المائي، ماسورثيرم باستثناء الخدمات التقليدية: صالون تصفيف الشعر والتجميل، التدليك، صالة الألعاب الرياضية، الحمام التقليدي، الساونا، الجاكوزي، حمام البخار"
+    }
+  },
+  "wellness_moment": {
+    "title": {
+      "en": "Wellness Moment",
+      "fr": "Moment de Bien-être",
+      "es": "Momento de Bienestar",
+      "ar": "لحظة استرخاء"
+    },
+    "body": {
+      "en": "Whether for a day, a week-end, or longer, El Minzah Wellness Center offers you the opportunity to indulge yourself with a range of treatments including body care, hydrotherapy, massages and facial treatments.",
+      "fr": "Que ce soit pour une journée, un week-end ou plus, El Minzah Wellness Center vous offre l'opportunité de vous faire plaisir avec une gamme de soins incluant soins du corps, hydrothérapie, massages et soins du visage.",
+      "es": "Ya sea por un día, un fin de semana o más, El Minzah Wellness Center le ofrece la oportunidad de darse un capricho con una gama de tratamientos que incluyen cuidado corporal, hidroterapia, masajes y tratamientos faciales.",
+      "ar": "سواء ليوم واحد، عطلة نهاية أسبوع، أو أكثر، يقدم لكم مركز المنزه الصحي الفرصة لتدليل أنفسكم بمجموعة من العلاجات تشمل العناية بالجسم، العلاج المائي، التدليك وعلاجات الوجه."
+    }
+  },
+  "sports_intro": {
+    "title": {
+      "en": "Sports and Leisurs",
+      "fr": "Sports et Loisirs",
+      "es": "Deportes y Ocio",
+      "ar": "الرياضة والترفيه"
+    },
+    "body": {
+      "en": "El Minzah places its M'salah Tennis Club (four hard courts), situated a mere five minutes' walk from the hotel, at the disposal of our clients. We also have client-use agreements with the Royal Equestrian Club, which possesses an excellent stable and the Royal Golf Club (Eighteen holes), which adjoin each other, and are a mere ten minutes drive from the hotel.",
+      "fr": "El Minzah met à la disposition de ses clients son Club de Tennis M'Sallah (quatre courts en dur), situé à cinq minutes à pied de l'hôtel. Nous avons également des accords avec le Royal Club Équestre, qui possède une excellente écurie, et le Royal Golf Club (dix-huit trous), qui sont mitoyens et à seulement dix minutes en voiture de l'hôtel.",
+      "es": "El Minzah pone a disposición de sus clientes su Club de Tenis M'salah (cuatro pistas duras), situado a solo cinco minutos a pie del hotel. También tenemos acuerdos con el Royal Equestrian Club, que posee un excelente establo, y el Royal Golf Club (dieciocho hoyos), que colindan y están a solo diez minutos en coche del hotel.",
+      "ar": "يضع فندق المنزه نادي مصلى للتنس (أربعة ملاعب صلبة)، الواقع على بعد خمس دقائق فقط سيرًا على الأقدام من الفندق، تحت تصرف نزلائنا. لدينا أيضًا اتفاقيات استخدام مع النادي الملكي للفروسية، الذي يمتلك اسطبلًا ممتازًا، ونادي الجولف الملكي (ثمانية عشر حفرة)، وهما متجاوران ويبعدان عشر دقائق فقط بالسيارة عن الفندق."
+    }
+  }
+}

@@ -1,0 +1,90 @@
+---
+import { languages, defaultLang } from '../i18n/ui';
+import ThemeSwitcher from '../components/ThemeSwitcher.astro';
+
+// Define the properties this layout accepts
+export interface Props {
+  lang: string;
+  title: string;
+}
+
+// Get props, with a fallback for language
+const { lang = defaultLang, title } = Astro.props;
+
+// Determine text direction for Arabic
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+---
+<!DOCTYPE html>
+<html lang={lang} dir={dir}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | El Minzah Hotel & Spa</title>
+    <link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}/favicon.ico`} />
+    <script is:inline>
+        // This script is executed before the page is rendered to prevent a flash of incorrect theme
+        const theme = (() => {
+            if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+                return localStorage.getItem('theme');
+            }
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            return 'light';
+        })();
+
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    <import '../styles/globals.css';
+</head>
+<body class="bg-cream-200 text-charcoal-800 font-serif text-lg leading-relaxed dark:bg-gold dark:text-gold-light">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg dark:bg-charcoal-800">
+        <div class="container mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 flex flex-col sm:flex-row justify-between sm:items-center">
+            <!-- Title Area -->
+            <div class="mb-6 sm:mb-0 text-center sm:text-left">
+                <h1 class="text-3xl sm:text-4xl font-bold text-charcoal-900 dark:text-cream-100">El Minzah Hotel & Spa</h1>
+                <p class="text-xl sm:text-2xl text-gold font-sans mt-1 dark:text-gold-light">{title}</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 sm:justify-end w-full sm:w-auto">
+                <!-- Language Switcher -->
+                <nav class="flex space-x-3 rtl:space-x-reverse w-full sm:w-auto justify-center sm:justify-start">
+                    {Object.entries(languages).map(([key, label]) => (
+                        <a
+                            href={`${import.meta.env.BASE_URL}/${key}/specs`}
+                            class:list={[
+                                "px-4 py-2 rounded-full text-sm font-sans font-semibold transition-all duration-300 ease-in-out",
+                                key === lang
+                                    ? "bg-gold text-white shadow-md dark:bg-gold-dark dark:text-cream-100 dark:shadow-lg"
+                                    : "text-charcoal-700 hover:bg-gold-light hover:text-charcoal-900 dark:text-cream-200 dark:hover:bg-gold"
+                            ]}
+                        >
+                            {label}
+                        </a>
+                    ))}
+                </nav>
+                <ThemeSwitcher />
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content is Injected Here -->
+    <main class="py-12 pb-20 bg-cream-200 dark:bg-charcoal-900">
+        <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-900 text-cream-100 py-10 dark:bg-charcoal-800">
+        <div class="container mx-auto max-w-7xl px-6 text-center">
+            <p class="font-sans text-sm">&copy; {new Date().getFullYear()} El Minzah Hotel & Spa. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

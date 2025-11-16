@@ -1,0 +1,46 @@
+PS C:\Users\Aymen\Documents\Minzah Blog> tree-lite
+
+FullName
+--------
+C:\Users\Aymen\Documents\Minzah Blog\.astro
+C:\Users\Aymen\Documents\Minzah Blog\src
+C:\Users\Aymen\Documents\Minzah Blog\.gitignore
+C:\Users\Aymen\Documents\Minzah Blog\LICENSE
+C:\Users\Aymen\Documents\Minzah Blog\package-lock.json
+C:\Users\Aymen\Documents\Minzah Blog\package.json
+C:\Users\Aymen\Documents\Minzah Blog\README.md
+C:\Users\Aymen\Documents\Minzah Blog\structure.txt
+C:\Users\Aymen\Documents\Minzah Blog\tsconfig.json
+C:\Users\Aymen\Documents\Minzah Blog\.astro\collections
+C:\Users\Aymen\Documents\Minzah Blog\.astro\content-assets.mjs
+C:\Users\Aymen\Documents\Minzah Blog\.astro\content-modules.mjs
+C:\Users\Aymen\Documents\Minzah Blog\.astro\content.d.ts
+C:\Users\Aymen\Documents\Minzah Blog\.astro\data-store.json
+C:\Users\Aymen\Documents\Minzah Blog\.astro\settings.json
+C:\Users\Aymen\Documents\Minzah Blog\.astro\types.d.ts
+C:\Users\Aymen\Documents\Minzah Blog\.astro\collections\main-content.schema.json
+C:\Users\Aymen\Documents\Minzah Blog\.astro\collections\meeting-rooms.schema.json
+C:\Users\Aymen\Documents\Minzah Blog\.astro\collections\restaurants.schema.json
+C:\Users\Aymen\Documents\Minzah Blog\src\content
+C:\Users\Aymen\Documents\Minzah Blog\src\data
+C:\Users\Aymen\Documents\Minzah Blog\src\docs
+C:\Users\Aymen\Documents\Minzah Blog\src\i18n
+C:\Users\Aymen\Documents\Minzah Blog\src\layouts
+C:\Users\Aymen\Documents\Minzah Blog\src\pages
+C:\Users\Aymen\Documents\Minzah Blog\src\content\main-content
+C:\Users\Aymen\Documents\Minzah Blog\src\content\meeting-rooms
+C:\Users\Aymen\Documents\Minzah Blog\src\content\restaurants
+C:\Users\Aymen\Documents\Minzah Blog\src\content\config.ts
+C:\Users\Aymen\Documents\Minzah Blog\src\content\main-content\index.md
+C:\Users\Aymen\Documents\Minzah Blog\src\content\meeting-rooms\salon-minzah.md
+C:\Users\Aymen\Documents\Minzah Blog\src\content\meeting-rooms\salon-tanger.md
+C:\Users\Aymen\Documents\Minzah Blog\src\content\restaurants\caids-bar.md
+C:\Users\Aymen\Documents\Minzah Blog\src\content\restaurants\el-erz.md
+C:\Users\Aymen\Documents\Minzah Blog\src\docs\Brochure El Minzah.pdf
+C:\Users\Aymen\Documents\Minzah Blog\src\docs\fiche technique.pdf
+C:\Users\Aymen\Documents\Minzah Blog\src\i18n\ui.ts
+C:\Users\Aymen\Documents\Minzah Blog\src\layouts\BaseLayout.astro
+C:\Users\Aymen\Documents\Minzah Blog\src\pages\[lang]
+C:\Users\Aymen\Documents\Minzah Blog\src\pages\index.astro
+C:\Users\Aymen\Documents\Minzah Blog\src\pages\[lang]\index.astro
+C:\Users\Aymen\Documents\Minzah Blog\src\pages\[lang]\specs.astro
