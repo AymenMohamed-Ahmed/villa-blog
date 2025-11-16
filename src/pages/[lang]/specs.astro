@@ -91,31 +91,50 @@ const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
                     <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
                         {pageContent.data.meetings_intro.body[lang]}
                     </p>
-                    <div class="overflow-x-auto rounded-lg border border-gold-light dark:border-gold-dark">
-                        <table class="min-w-full divide-y divide-gold-light dark:divide-gold-dark bg-cream-100 dark:bg-charcoal-700 text-base">
-                            <thead class="bg-gold-dark dark:bg-gold-dark text-dark font-sans">
-                                <tr>
-                                    {['room', 'location', 'theater', 'u_shape', 'cocktail', 'buffet', 'dimensions'].map(key => (
-                                        <th class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 font-semibold text-left">{t(`meetings.${key}`)}</th>
-                                    ))}
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gold-light">
-                                {meetingRooms.map(room => ( 
-                                    <tr class="hover:bg-cream-200 dark:hover:bg-charcoal-900 transition-colors dark:text-cream-200">
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 font-serif text-gold-dark dark:text-cream-100 font-semibold">{room.data.name[lang]}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200">{room.data.location[lang]}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.theater ?? '—'}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.u_shape ?? '—'}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.cocktail ?? '—'}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 text-center">{room.data.buffet_dinner ?? '—'}</td>
-                                        <td class="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4 text-charcoal-700 dark:text-cream-200 font-sans text-sm">
-                                            {room.data.length_m}m x {room.data.width_m}m x {room.data.height_m}m
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                    <div class="bg-cream-100 dark:bg-charcoal-700 rounded-2xl shadow-lg border border-gold-light dark:border-gold-dark overflow-hidden">
+                        {meetingRooms.map(room => (
+                            <div class="p-6 sm:p-8">
+                                <h3 class="text-2xl sm:text-3xl font-serif text-gold-dark dark:text-cream-100 text-center mb-6 pb-4 border-b-2 border-gold-light dark:border-gold-dark">{room.data.name[lang]}</h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 text-center">
+                                    
+                                    {/* -- Capacities -- */}
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.theater')}</span>
+                                        <span class="text-2xl font-bold text-charcoal-900 dark:text-white mt-1">{room.data.theater ?? '—'}</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.u_shape')}</span>
+                                        <span class="text-2xl font-bold text-charcoal-900 dark:text-white mt-1">{room.data.u_shape ?? '—'}</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.cocktail')}</span>
+                                        <span class="text-2xl font-bold text-charcoal-900 dark:text-white mt-1">{room.data.cocktail ?? '—'}</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.lunch_served')}</span>
+                                        <span class="text-2xl font-bold text-charcoal-900 dark:text-white mt-1">{room.data.lunch_diner_served ?? '—'}</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.lunch_buffet')}</span>
+                                        <span class="text-2xl font-bold text-charcoal-900 dark:text-white mt-1">{room.data.lunch_diner_buffet ?? '—'}</span>
+                                    </div>
+
+                                    {/* -- Dimensions -- */}
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.dimensions')}</span>
+                                        <span class="text-xl font-bold text-charcoal-900 dark:text-white mt-2">
+                                            {room.data.length_m}m &times; {room.data.width_m}m &times; {room.data.height_m}m
+                                        </span>
+                                    </div>
+
+                                    {/* -- Location -- */}
+                                    <div class="flex flex-col items-center justify-center p-4 bg-white dark:bg-charcoal-800 rounded-lg shadow-md transition transform hover:-translate-y-1 col-span-full md:col-span-2">
+                                        <span class="text-sm font-serif font-bold text-gold-dark dark:text-gold-light uppercase tracking-wider">{t('meetings.location')}</span>
+                                        <span class="text-xl font-semibold text-charcoal-900 dark:text-white mt-2 font-serif">{room.data.location[lang]}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </section>
 
@@ -142,18 +161,6 @@ const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
                     </div>
                     )}
                     <div class="space-y-8 mt-8">
-                        <div>
-                            <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.wellness_intro.title[lang]}</h3>
-                            <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">
-                                {pageContent.data.wellness_intro.body[lang]}
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.wellness_moment.title[lang]}</h3>
-                            <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">
-                                {pageContent.data.wellness_moment.body[lang]}
-                            </p>
-                        </div>
                         <div>
                             <h3 class="text-2xl font-serif text-gold-dark mb-4">{pageContent.data.sports_intro.title[lang]}</h3>
                             <p class="text-charcoal-700 dark:text-cream-200 leading-relaxed text-justify">

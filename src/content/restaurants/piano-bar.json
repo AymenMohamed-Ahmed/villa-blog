@@ -1,0 +1,16 @@
+{
+  "name": {
+    "en": "Piano Bar",
+    "fr": "Piano Bar",
+    "es": "Piano Bar",
+    "ar": "بيانو بار"
+  },
+  "description": {
+    "en": "To enjoy light meals, sip your favorite beverage or just remember the splendor of the place and its history.",
+    "fr": "Pour savourer des repas légers, siroter votre boisson préférée ou simplement vous souvenir de la splendeur du lieu et de son histoire.",
+    "es": "Para disfrutar de comidas ligeras, tomar su bebida favorita o simplemente recordar el esplendor del lugar y su historia.",
+    "ar": "للاستمتاع بوجبات خفيفة، أو احتساء مشروبك المفضل، أو مجرد تذكر روعة المكان وتاريخه."
+  },
+  "capacity": null,
+  "url": null
+}

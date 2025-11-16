@@ -1,0 +1,22 @@
+{
+  "name": {
+    "en": "Grand Ballroom",
+    "fr": "Grande Salle de Bal",
+    "es": "Gran Salón de Baile",
+    "ar": "قاعة الاحتفالات الكبرى"
+  },
+  "location": {
+    "en": "Ground Floor",
+    "fr": "Rez-de-chaussée",
+    "es": "Planta Baja",
+    "ar": "الطابق الأرضي"
+  },
+  "theater": 300,
+  "u_shape": 90,
+  "cocktail": 260,
+  "lunch_diner_served": 250,
+  "lunch_diner_buffet": 220,
+  "length_m": 17,
+  "width_m": 17,
+  "height_m": 4.5
+}

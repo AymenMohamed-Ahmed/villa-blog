@@ -24,7 +24,8 @@ export const ui = {
     'meetings.theater': 'Theater',
     'meetings.u_shape': 'U-Shape',
     'meetings.cocktail': 'Cocktail',
-    'meetings.buffet': 'Buffet Dinner',
+    'meetings.lunch_served': 'Served Lunch/Dinner',
+    'meetings.lunch_buffet': 'Buffet Lunch/Dinner',
     'meetings.dimensions': 'Dimensions (L x W x H)',
   },
   fr: {
@@ -42,7 +43,8 @@ export const ui = {
     'meetings.theater': 'Théâtre',
     'meetings.u_shape': 'En U',
     'meetings.cocktail': 'Cocktail',
-    'meetings.buffet': 'Dîner Buffet',
+    'meetings.lunch_served': 'Déjeuner/Dîner Servi',
+    'meetings.lunch_buffet': 'Déjeuner/Dîner Buffet',
     'meetings.dimensions': 'Dimensions (L x l x H)',
   },
   es: {
@@ -60,7 +62,8 @@ export const ui = {
     'meetings.theater': 'Teatro',
     'meetings.u_shape': 'En U',
     'meetings.cocktail': 'Cóctel',
-    'meetings.buffet': 'Cena Buffet',
+    'meetings.lunch_served': 'Almuerzo/Cena Servido',
+    'meetings.lunch_buffet': 'Almuerzo/Cena Buffet',
     'meetings.dimensions': 'Dimensiones (L x A x Al)',
   },
   ar: {
@@ -78,7 +81,8 @@ export const ui = {
     'meetings.theater': 'مسرح',
     'meetings.u_shape': 'شكل U',
     'meetings.cocktail': 'كوكتيل',
-    'meetings.buffet': 'عشاء بوفيه',
+    'meetings.lunch_served': 'غداء/عشاء مقدم',
+    'meetings.lunch_buffet': 'بوفيه غداء/عشاء',
     'meetings.dimensions': 'الأبعاد (ط x ع x ا)',
   },
 } as const;

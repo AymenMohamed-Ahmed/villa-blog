@@ -1,16 +1,16 @@
 {
   "name": {
     "en": "Andalusian Patio",
-    "fr": "Patio Andalou",
+    "fr": "Patio Andalous",
     "es": "Patio Andaluz",
     "ar": "الفناء الأندلسي"
   },
   "description": {
-    "en": "Ideal for cocktails and open bars.",
-    "fr": "Idéal pour les cocktails et les open bars.",
-    "es": "Ideal para cócteles y barras libres.",
-    "ar": "مثالي للكوكتيلات والبارات المفتوحة."
+    "en": "Arab Moorish decoration, ideal for cocktails and open bar. Up to 100 people.",
+    "fr": "Décoration arabo-mauresque, idéal pour les cocktails et open bar. Jusqu'à 100 personnes.",
+    "es": "Decoración árabe-morisca, ideal para cócteles y barra libre. Hasta 100 personas.",
+    "ar": "ديكور عربي مغاربي، مثالي لحفلات الكوكتيل والبار المفتوح. يتسع حتى 100 شخص."
   },
-  "capacity": 300,
-  "url": "https://menu.elminzah.ma/andalusia-patio/"
+  "capacity": 100,
+  "url": null
 }

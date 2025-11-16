@@ -38,11 +38,6 @@ const mainContentCollection = defineCollection({
       title: multilingualString,
       body: multilingualString,
     }),
-    // THIS IS THE FIX:
-    wellness_moment: z.object({
-      title: multilingualString,
-      body: multilingualString,
-    }),
     sports_intro: z.object({
       title: multilingualString,
       body: multilingualString,
@@ -57,7 +52,7 @@ const restaurantsCollection = defineCollection({
     name: multilingualString,
     description: multilingualString,
     capacity: z.number().optional().nullable(),
-    url: z.string().optional(),
+    url: z.string().optional().nullable(),
   }),
 });
 
@@ -71,8 +66,8 @@ const meetingRoomsCollection = defineCollection({
     u_shape: z.number().optional().nullable(),
     cocktail: z.number().optional().nullable(),
     dancing_dinner: z.number().optional().nullable(),
-    buffet_dinner: z.number().optional().nullable(),
-    lunch_dinner: z.number().optional().nullable(),
+    lunch_diner_served: z.number().optional().nullable(),
+    lunch_diner_buffet: z.number().optional().nullable(),
     length_m: z.number().optional().nullable(),
     width_m: z.number().optional().nullable(),
     height_m: z.number().optional().nullable(),

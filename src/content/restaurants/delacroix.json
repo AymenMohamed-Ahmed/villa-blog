@@ -1,0 +1,16 @@
+{
+  "name": {
+    "en": "Delacroix",
+    "fr": "Delacroix",
+    "es": "Delacroix",
+    "ar": "ديلاكروا"
+  },
+  "description": {
+    "en": "Gourmet restaurant with its splendid terrace overlooking the medina of Tangier. Refined French cuisine, opens for lunch and dinner.",
+    "fr": "Restaurant gastronomique avec sa splendide terrasse dominant la médina de Tanger. Cuisine française raffinée, ouvert pour le déjeuner et le dîner.",
+    "es": "Restaurante gourmet con su espléndida terraza con vistas a la medina de Tánger. Refinada cocina francesa, abierto para almuerzos y cenas.",
+    "ar": "مطعم فاخر مع شرفته الرائعة المطلة على مدينة طنجة القديمة. مطبخ فرنسي راقٍ، يفتح للغداء والعشاء."
+  },
+  "capacity": 50,
+  "url": null
+}

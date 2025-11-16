@@ -3,6 +3,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/el-minzah',
+  base: '/villa-de-france',
   integrations: [tailwind()],
 });
