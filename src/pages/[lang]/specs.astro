@@ -56,6 +56,17 @@ const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
                     <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
                         {pageContent.data.restaurants_intro.body[lang]}
                     </p>
+                    {pageContent.data.restaurants.images && (
+                        <div class="flex justify-center mb-8">
+                            <div class="carousel carousel-center w-full max-w-4xl rounded-box space-x-4 bg-neutral-focus p-4">
+                                {pageContent.data.restaurants.images.map((image: string, index: number) => (
+                                    <div id={`restaurant-slide${index}`} class="carousel-item">
+                                        <img src={image} alt={`Restaurant ${index + 1}`} class="rounded-box" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                         {restaurants.map(restaurant => {
                             const CardContent = (
@@ -91,6 +102,17 @@ const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
                     <p class="text-charcoal-700 dark:text-cream-200 text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
                         {pageContent.data.meetings_intro.body[lang]}
                     </p>
+                    {pageContent.data.meetings.images && (
+                        <div class="flex justify-center mb-8">
+                            <div class="carousel carousel-center w-full max-w-4xl rounded-box space-x-4 bg-neutral-focus p-4">
+                                {pageContent.data.meetings.images.map((image: string, index: number) => (
+                                    <div id={`meeting-slide${index}`} class="carousel-item">
+                                        <img src={image} alt={`Meeting Room ${index + 1}`} class="rounded-box" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                     <div class="bg-cream-100 dark:bg-charcoal-700 rounded-2xl shadow-lg border border-gold-light dark:border-gold-dark overflow-hidden">
                         {meetingRooms.map(room => (
                             <div class="p-6 sm:p-8">

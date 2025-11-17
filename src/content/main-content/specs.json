@@ -28,7 +28,8 @@
     },
     "images": [
       "/villa-de-france/assets/images/guest-room-1.png",
-      "/villa-de-france/assets/images/guest-room-2.png"
+      "/villa-de-france/assets/images/guest-room-2.png",
+      "/villa-de-france/assets/images/guest-room-3.png"
     ]
   },
   "restaurants_intro": {
@@ -45,6 +46,14 @@
       "ar": "اكتشف خياراتنا لتناول الطعام، من المطبخ الفرنسي الفاخر في مطعم ديلاكروا، بشرفته الرائعة المطلة على المدينة القديمة، إلى الروعة التاريخية والوجبات الخفيفة في بيانو بار."
     }
   },
+  "restaurants": {
+    "images": [
+        "/villa-de-france/assets/images/restaurant-1.png",
+        "/villa-de-france/assets/images/restaurant-2.png",
+        "/villa-de-france/assets/images/restaurant-3.png",
+        "/villa-de-france/assets/images/restaurant-4.png"
+    ]
+  },
   "meetings_intro": {
     "title": {
       "en": "Meeting Rooms & Banquets",
@@ -58,6 +67,11 @@
       "es": "Con su gran sala de reuniones con luz natural (con acceso directo a los jardines y capacidad para hasta 300 personas), el Grand Hotel Villa de France puede organizar seminarios y banquetes y convertirlos en eventos exitosos. Equipamiento disponible: audio, micrófonos portátiles y fijos, pantalla de proyección, rotafolio, atril.",
       "ar": "بفضل قاعة الاجتماعات الكبيرة المضاءة بنور النهار (مع إمكانية الوصول المباشر إلى الحدائق وتتسع لما يصل إلى 300 شخص)، يمكن لفندق جراند هوتيل فيلا دي فرانس تنظيم الندوات والحفلات وجعلها مناسبات ناجحة. المعدات المتاحة: نظام صوتي، ميكروفونات محمولة وثابتة، شاشة عرض، لوح ورقي، منصة."
     }
+  },
+  "meetings": {
+    "images": [
+        "/villa-de-france/assets/images/ballroom.png"
+    ]
   },
   "leisure_intro": {
     "title": {
