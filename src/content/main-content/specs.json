@@ -28,7 +28,7 @@
     },
     "images": [
       "/villa-de-france/assets/images/guest-room-1.png",
-      "/villa-de-france/assets/images/guest-room-2.png"
+      "/villa-de-france/assets/images/guest-room-3.png"
     ]
   },
   "restaurants_intro": {
@@ -45,6 +45,14 @@
       "ar": "اكتشف خياراتنا لتناول الطعام، من المطبخ الفرنسي الفاخر في مطعم ديلاكروا، بشرفته الرائعة المطلة على المدينة القديمة، إلى الروعة التاريخية والوجبات الخفيفة في بيانو بار."
     }
   },
+  "restaurants": {
+    "images": [
+        "/villa-de-france/assets/images/restaurant-1.png",
+        "/villa-de-france/assets/images/restaurant-2.png",
+        "/villa-de-france/assets/images/restaurant-3.png",
+        "/villa-de-france/assets/images/restaurant-4.png"
+    ]
+  },
   "meetings_intro": {
     "title": {
       "en": "Meeting Rooms & Banquets",
@@ -58,6 +66,12 @@
       "es": "Con su gran sala de reuniones con luz natural (con acceso directo a los jardines y capacidad para hasta 300 personas), el Grand Hotel Villa de France puede organizar seminarios y banquetes y convertirlos en eventos exitosos. Equipamiento disponible: audio, micrófonos portátiles y fijos, pantalla de proyección, rotafolio, atril.",
       "ar": "بفضل قاعة الاجتماعات الكبيرة المضاءة بنور النهار (مع إمكانية الوصول المباشر إلى الحدائق وتتسع لما يصل إلى 300 شخص)، يمكن لفندق جراند هوتيل فيلا دي فرانس تنظيم الندوات والحفلات وجعلها مناسبات ناجحة. المعدات المتاحة: نظام صوتي، ميكروفونات محمولة وثابتة، شاشة عرض، لوح ورقي، منصة."
     }
+  },
+  "meetings": {
+    "images": [
+        "/villa-de-france/assets/images/ballroom.png",
+        "/villa-de-france/assets/images/guest-room-2.png"
+    ]
   },
   "leisure_intro": {
     "title": {
@@ -108,6 +122,7 @@
       "fr": "À 5 minutes de l'hôtel, le club de tennis M'Sallah GARDEN (propriété de l'hôtel) avec 4 courts éclairés (disponibles sur demande auprès de notre concierge). Club équestre Boubana, à 15 minutes de l'hôtel et sur réservation auprès de notre concierge. Golf Tanger : À 15 minutes de l'hôtel, le \"Royal Country Club\" avec ses 18 trous et son restaurant \"Le 19ème Trou\". (Sur réservation auprès de notre concierge). De plus, notre chef concierge peut organiser des excursions pour visiter les villes de Tanger, Asilah, Chefchaouen, Tétouan et des activités récréatives en ville (Quad, Promenade en bateau, Sortie Catamaran, Plongée sous-marine...)",
       "es": "A 5 minutos del hotel, el club de tenis M'Sallah GARDEN (propiedad del hotel) con 4 pistas iluminadas (disponibles bajo petición a través de nuestro conserje). Club de equitación Boubana, a 15 minutos del hotel y previa reserva a través de nuestro conserje. Golf Tánger: A 15 minutos del hotel, el \"Royal Country Club\" con sus 18 hoyos y su restaurante \"El Hoyo 19\". (Previa reserva a través de nuestro conserje). Además, nuestro jefe de conserjería puede organizar excursiones para visitar las ciudades de Tánger, Asilah, Chefchaouen, Tetuán y actividades recreativas en la ciudad (Quad, Paseo en barco, Salida en Catamarán, Buceo...)",
       "ar": "على بعد 5 دقائق من الفندق، يقع نادي مصلى جاردن للتنس (ملكية الفندق) مع 4 ملاعب مضاءة (متاحة عند الطلب عبر الكونسيرج). نادي بوبانة للفروسية، على بعد 15 دقيقة من الفندق وعند الحجز عبر الكونسيرج. جولف طنجة: على بعد 15 دقيقة من الفندق، يقع \"النادي الملكي الريفي\" بـ 18 حفرة ومطعمه \"الحفرة 19\". (عند الحجز عبر الكونسيرج). أيضًا، يمكن لكبير خدمنا ترتيب رحلات لزيارة مدن طنجة، أصيلة، شفشاون، تطوان وأنشطة ترفيهية في المدينة (دراجات رباعية، جولة بحرية بالقارب، خروج بالكاتاماران، غوص)"
-    }
+    },
+    "images": []
   }
 }
