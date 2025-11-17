@@ -25,9 +25,15 @@ const mainContentCollection = defineCollection({
       title: multilingualString,
       body: multilingualString,
     }),
+    restaurants: z.object({
+        images: z.array(z.string()).optional(),
+    }),
     meetings_intro: z.object({
       title: multilingualString,
       body: multilingualString,
+    }),
+    meetings: z.object({
+        images: z.array(z.string()).optional(),
     }),
     leisure_intro: z.object({
       title: multilingualString,
