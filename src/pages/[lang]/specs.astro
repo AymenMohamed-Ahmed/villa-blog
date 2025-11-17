@@ -61,10 +61,10 @@ const meetingRooms = await getCollection('meeting-rooms').catch(() => []);
                     {pageContent.data.restaurants && pageContent.data.restaurants.images && (
                         <>
                             <div class="flex justify-center mb-8">
-                                <div class="carousel carousel-center w-full max-w-4xl rounded-box space-x-4 bg-neutral-focus p-4 h-64 flex">
+                                <div class="carousel carousel-center w-full rounded-box space-x-4 bg-neutral-focus p-4">
                                     {pageContent.data.restaurants.images.map((image: string, index: number) => (
                                         <div id={`restaurant-slide${index}`} class="carousel-item">
-                                            <img src={image} alt={`Restaurant ${index + 1}`} class="rounded-box" />
+                                            <img src={image} alt={`Restaurant ${index + 1}`} class="rounded-box h-64" />
                                         </div>
                                     ))}
                                 </div>
